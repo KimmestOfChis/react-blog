@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# Front-End Application Using JSONPlaceholder API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This tutorial will guide you through the process of creating a simple front-end application that interacts with the JSONPlaceholder API. We will be using React for the front-end and Material-UI for the user interface components.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you begin, make sure you have the following installed:
+
+- Node.js and npm: You can download these from [here](https://nodejs.org/en/download/).
+- A text editor: We recommend Visual Studio Code, which you can download from [here](https://code.visualstudio.com/download).
+
+## Step 1: Set Up the Project
+
+First, let's create a new React application using Create React App:
 
 ### `npm start`
 
@@ -44,6 +51,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Start with `npm start`
 
 ### Code Splitting
 
