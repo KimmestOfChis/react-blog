@@ -1,6 +1,34 @@
-# Front-End Application Using JSONPlaceholder API
+## Instructions
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. Run `npm start` to start the application
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Run `npm test` to run the tests (optional)
 
-This tutorial will guide you through the process of creating a simple front-end application that interacts with the JSONPlaceholder API. We will be using React for the front-end and Material-UI for the user interface components.
+Project Requirements
+Use this fake API to fetch the data: https://jsonplaceholder.typicode.com/posts
+
+Create a front end application that displays a list of posts. The application should have two pages:
+- A page that displays a list of posts
+- A page that displays a singular post with its details, I should be able to navigate to this page from the list of posts
+
+You can use any (or no) styling or libraries
+I recommend keeping your dependencies to a minimum, but you can use whatever you want
+
+Confused? Ask for help! 
+No question is a "stupid question" and we're happy to help you get started.
+And we might just learn something by asking you questions too!
+
+This project is purposefully open-ended. As you struggle to complete this project, you'll learn a lot!
+
+| Endpoint                     | HTTP Method | Request Parameters | Response                                                                                                                                          |
+|------------------------------|-------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/posts`                     | GET         | -                  | Array of all post objects. Each object includes `id`, `title`, `body`, and `userId`.                                                               |
+| `/posts/{id}`                | GET         | `id`               | Single post object with the given `id`, including `id`, `title`, `body`, and `userId`.                                                             |
+| `/posts`                     | POST        | `title`, `body`, `userId` | New post object that was created, including `id`, `title`, `body`, and `userId`.                                                                  |
+| `/posts/{id}`                | PUT         | `id`, `title`, `body`, `userId` | Updated post object with the given `id`, including `id`, `title`, `body`, and `userId`.                                                            |
+| `/posts/{id}`                | DELETE      | `id`               | Empty object `{}`. The server responds with a 200 status code for a successful delete, even though no actual deletion occurs on the server-side. |
+| `/posts/{id}/comments`       | GET         | `id`               | Array of all comment objects for the post with the given `id`. Each object includes `postId`, `id`, `name`, `email`, and `body`.                  |
 
 ## Prerequisites
 
